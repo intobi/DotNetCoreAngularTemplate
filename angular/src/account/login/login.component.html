@@ -3,7 +3,7 @@
         <div class="login-area">
 
         </div>
-        <form #loginForm="ngForm" id="LoginForm" method="post" novalidate (ngSubmit)="login()" style="width: 550px;">
+        <form #loginForm="ngForm" id="LoginForm" method="post" novalidate (ngSubmit)="login()" class="form-login" >
                 <div class="text-center">
                         <img src="assets/images/logo.svg" width="200" height="60" alt="User" />
                 </div>
@@ -32,9 +32,12 @@
                 </div>
             </div>
             <div class="form-actions">
-                    <button id="LoginButton" class="btn btn-block btn-intobi waves-effect" type="submit">{{l("LogIn")}}</button>
+                    <button  id="LoginButton" class="btn btn-block btn-intobi waves-effect" type="submit">{{l("LogIn")}}</button>
                     <button class="btn btn-block btn-back waves-effect" type="button"  [routerLink]="['../register']">{{l("Registration")}}</button>
+                     <button class="btn  btn-back google "><i class="fa fa-google" aria-hidden="true"></i></button>
+                     <button class="btn  btn-back facebook "><i class=" fa fa-facebook" aria-hidden="true"></i></button>
                 </div>
+                <br>
         </form>
     </div>
 </div>

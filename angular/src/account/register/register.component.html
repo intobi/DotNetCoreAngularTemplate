@@ -1,6 +1,6 @@
 ﻿<div class="card" [@routerTransition]>
     <div #cardBody class="body">
-        <form #registerForm="ngForm" method="post" novalidate (ngSubmit)="save()"  style="width: 550px;">
+        <form #registerForm="ngForm" method="post" novalidate (ngSubmit)="save()" class="form-login">
                 <div class="text-center">
                         <img src="assets/images/logo.svg" width="200" height="60" alt="User" />
                 </div>
@@ -42,8 +42,8 @@
             </div>
 
             <div class="form-actions">
-                <button [disabled]="saving" type="submit" class="btn btn-block btn-intobi waves-effect" [disabled]="!registerForm.form.valid">{{l("Submit")}}</button>
-                <button  [routerLink]="['../login']" type="button" class="btn btn-block btn-back waves-effect">{{l("Back")}}</button>
+                <button  type="submit" class="btn btn-block btn-intobi waves-effect" [disabled]="!registerForm.form.valid">{{l("Submit")}}</button>
+                <button  [routerLink]="['../login']" type="button" class="btn btn-block btn-back  waves-effect">{{l("Back")}}</button>
             </div>
 
         </form>

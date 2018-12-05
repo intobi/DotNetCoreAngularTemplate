@@ -39,6 +39,7 @@ export class RegisterComponent extends AppComponentBase implements AfterViewInit
     }
 
     save(): void {
+        console.log(123,this.model);
         this.saving = true;
         this._accountService.register(this.model)
             .pipe(finalize(() => { this.saving = false; }))
@@ -49,11 +50,11 @@ export class RegisterComponent extends AppComponentBase implements AfterViewInit
                     return;
                 }
 
-                //Autheticate
+               
                 this.saving = true;
-                this._loginService.authenticateModel.userNameOrEmailAddress = this.model.userName;
-                this._loginService.authenticateModel.password = this.model.password;
-                this._loginService.authenticate(() => { this.saving = false; });
+                // this._loginService.authenticateModel.userNameOrEmailAddress = this.model.userName;
+                // this._loginService.authenticateModel.password = this.model.password;
+                // this._loginService.authenticate(() => { this.saving = false; });
             });
     }
 }
