@@ -1,0 +1,476 @@
+﻿@speedanimation-duration: 20s;
+@diamond-opacity: .03;
+@diamond-border: 100px solid #8100ed;
+@fontlogo: Arial, Helvetica, sans-serif;
+
+.content.account-forms {
+    margin-top: 10px;
+}
+
+.content.tenant-change-box {
+    padding: 16px 16px 0px 16px;
+    margin: 120px auto 0px auto;
+    max-width: 400px;
+    a {
+        cursor: pointer;
+    }
+}
+.login-page {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-color: #303c5e;
+     .card {
+     background: unset; 
+     min-height: unset;  
+     box-shadow: unset; 
+     position: unset; 
+     margin-bottom: unset; 
+     }
+     .card .body {
+        margin-top: 300px;
+        font-size: 14px;
+        color: #555;
+        padding: 0px 60px;
+    }
+     .account-box {
+         position: absolute;
+        width: 55%;
+        height: 100%;
+        background: black;
+     }
+     .account-box-left {
+        position: absolute;
+        width: 45%;
+        margin-left: 55%;
+        height: 100%;
+        z-index: 9999;
+        color: white;
+
+     }
+     .input-group input[type="text"], .input-group .form-control {
+        border: none;
+        box-shadow: none;
+        padding-left: 13px;
+        background: #37456C;
+    }
+
+}
+
+.btn-intobi {
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    font-size: 14px;
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#28BE69), to(#3BCEB0));
+    background: linear-gradient(to bottom, #28BE69, #3BCEB0);
+    border: 0;
+    -webkit-box-shadow: 0 10px 20px rgba(36, 202, 108, 0.4);
+    box-shadow: 0 10px 20px rgba(36, 202, 108, 0.4);
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    line-height: 1;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 16px 38px;
+
+}
+.btn-back {
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    font-size: 14px;
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#be282a), to(#ce3b3b));
+    background: linear-gradient(to bottom, #be282a, #ce3b3b);
+    border: 0;
+    -webkit-box-shadow: 0 10px 20px rgba(36, 202, 108, 0.4);
+    box-shadow: 0 10px 20px rgba(36, 202, 108, 0.4);
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    line-height: 1;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 16px 38px;
+
+}
+
+
+.anim-container.triangels {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #303C5E, #303C5E);
+    margin-left: auto;
+  }
+
+.anim-container.triangels .diamond > dev:nth-child(n) {
+    position: absolute;
+  }
+  .diamond >div:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    opacity: @diamond-opacity;
+    top: 40%;
+    left: 40%;
+    border: @diamond-border;
+    border-left: 360px solid transparent;
+    border-right: 360px solid transparent;
+    border-bottom: 901px solid white;
+    transition: all 200ms ease-in-out;
+    animation: trian-zero ease 0s infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-zero {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(-360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(1){
+    border-left:  360px solid transparent;
+    border-right:  360px solid transparent;
+    border-top:  901px solid white;
+  }
+  .diamond >div:nth-child(2) {
+    border: @diamond-border;
+    position: absolute;
+    z-index: 2;
+    opacity: @diamond-opacity;
+    top: -12%;
+    left: 34%;
+    border: 2px solid yellow ;
+    border-left: 252px solid transparent;
+    border-right: 467px solid transparent;
+    border-bottom: 616px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-one ease 0s infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-one {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(2){
+    border-left:  467px solid transparent;
+    border-right:  254px solid transparent;
+    border-top:  616px solid white;
+  }
+  .diamond >div:nth-child(3) {
+    border: @diamond-border;
+    position: absolute;
+    z-index: 3;
+    opacity: @diamond-opacity;
+    top: 29%;
+    left: -41%;
+    border-left: 254px solid transparent;
+    border-right: 467px solid transparent;
+    border-top: 899px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-two ease 200ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-two {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(3){
+    border-left:  467px solid transparent;
+    border-right:  254px solid transparent;
+    border-bottom:  899px solid white;
+  }
+  .diamond >div:nth-child(4) {
+    border: @diamond-border;
+    position: absolute;
+    z-index: 4;
+    opacity: @diamond-opacity;
+    top: -27%;
+    left: -60%;
+    border-left: 254px solid transparent;
+    border-right: 467px solid transparent;
+    border-bottom: 899px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-four ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-four {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(-360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(4){
+    border-left:  467px solid transparent;
+    border-right:  254px solid transparent;
+    border-top:  899px solid white;
+  }
+  
+  .diamond >div:nth-child(5) {
+    border: @diamond-border;
+    position: absolute;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: -43%;
+    left: 0%;
+    border-left: 254px solid transparent;
+    border-right: 467px solid transparent;
+    border-bottom: 899px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-five ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-five {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(-360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(5){
+    border-left:  467px solid transparent;
+    border-right:  254px solid transparent;
+    border-top:  899px solid white;
+  }
+  .diamond >div:nth-child(6) {
+    position: absolute;
+    border: @diamond-border;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: 23%;
+    left: 0%;
+    border-left: 378px solid transparent;
+    border-right: 683px solid transparent;
+    border-bottom: 899px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-six ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-six {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(-360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(6){
+    border-left:  467px solid transparent;
+    border-right:  254px solid transparent;
+    border-top:  899px solid white;
+  }
+  
+  .diamond >div:nth-child(7) {
+    border: @diamond-border;
+    position: absolute;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: 1%;
+    left: -28%;
+    border-left: 500px solid transparent;
+    border-right: 158px solid transparent;
+    border-bottom: 899px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-seven ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-seven {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(7){
+    border-left:  467px solid transparent;
+    border-right:  254px solid transparent;
+    border-top:  899px solid white;
+  }
+  
+  .diamond >div:nth-child(8) {
+    position: absolute;
+    border: @diamond-border;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: -19%;
+    left: -12%;
+    border-left: 777px solid transparent;
+    border-right: 777px solid transparent;
+    border-top: 998px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-eight ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-eight {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(-360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(8){
+    border-left:  467px solid transparent;
+    border-right:  254px solid transparent;
+    border-top:  899px solid white;
+  }
+  
+  .diamond >div:nth-child(9) {
+    position: absolute;
+    border: @diamond-border;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: 17%;
+    left: -39%;
+    border-left: 359px solid transparent;
+    border-right: 226px solid transparent;
+    border-top: 709px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-nine ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-nine {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(-360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(9){
+    border-left:  467px solid transparent;
+    border-right:  254px solid transparent;
+    border-top:  899px solid white;
+  }
+  .diamond >div:nth-child(10) {
+    position: absolute;
+    border: @diamond-border;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: 25%;
+    left: -13%;
+    border-left: 548px solid transparent;
+    border-right: 314px solid transparent;
+    border-top: 684px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-ten ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-ten {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(-360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(10){
+    border-left:  467px solid transparent;
+    border-right:  254px solid transparent;
+    border-top:  899px solid white;
+  }
+  .diamond >div:nth-child(11) {
+    position: absolute;
+    border: @diamond-border;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: -46%;
+    left: -34%;
+    border-left: 377px solid transparent;
+    border-right: 377px solid transparent;
+    border-bottom: 579px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-down-one ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-down-one {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(-360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(11){
+    border-left:  467px solid transparent;
+    border-right:  254px solid transparent;
+    border-top:  899px solid white;
+  }
+  .diamond >div:nth-child(12) {
+    position: absolute;
+    border: @diamond-border;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: -89%;
+    left: -43%;
+    border-left: 1177px solid transparent;
+    border-right: 1177px solid transparent;
+    border-bottom: 1298px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-down-two ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-down-two {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(-360deg)}
+  }
+  .anim-container.triangels:hover .diamond >div:nth-child(12){
+    border-left:  467px solid transparent;
+    border-right:  254px solid transparent;
+    border-top:  899px solid white;
+  }
+  .diamond >div:nth-child(13) {
+    position: absolute;
+    border: @diamond-border;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: -36%;
+    left: -52%;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 800px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-down-three ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-down-three {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(-360deg)}
+  }
+  
+  .diamond >div:nth-child(14) {
+    position: absolute;
+    border: @diamond-border;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: -54%;
+    left: -7%;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 1000px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-down-four ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-down-four {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(360deg)}
+  }
+  
+  .diamond >div:nth-child(15) {
+    position: absolute;
+    border: @diamond-border;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: -57%;
+    left: -36%;
+    border-left: 400px solid transparent;
+    border-right: 400px solid transparent;
+    border-bottom: 1000px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-down-five ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-down-five {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(360deg)}
+  }
+  .diamond >div:nth-child(16) {
+    position: absolute;
+    border: @diamond-border;
+    z-index: 5;
+    opacity: @diamond-opacity;
+    top: -15%;
+    left: -28%;
+    border-left: 700px solid transparent;
+    border-right: 700px solid transparent;
+    border-bottom: 1000px solid white;
+    transition: all 500ms ease-in-out;
+    animation: trian-down-six ease 300ms infinite;
+    animation-duration: @speedanimation-duration;
+  }
+  @keyframes trian-down-six {
+    0% {transform: rotate(0deg)}
+    100%{  transform: rotate(360deg)}
+  }
