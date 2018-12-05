@@ -52,9 +52,10 @@ export class RegisterComponent extends AppComponentBase implements AfterViewInit
 
                
                 this.saving = true;
-                // this._loginService.authenticateModel.userNameOrEmailAddress = this.model.userName;
-                // this._loginService.authenticateModel.password = this.model.password;
-                // this._loginService.authenticate(() => { this.saving = false; });
+                this._loginService.authenticateModel.userNameOrEmailAddress = this.model.userName;
+                this._loginService.authenticateModel.password = this.model.password;
+                this._loginService.authenticate(() => { this.saving = false; });
             });
     }
+   
 }
