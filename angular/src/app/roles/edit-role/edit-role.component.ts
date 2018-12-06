@@ -6,7 +6,10 @@ import { finalize } from 'rxjs/operators';
 
 @Component({
     selector: 'edit-role-modal',
-    templateUrl: './edit-role.component.html'
+    templateUrl: './edit-role.component.html',
+    styleUrls: [
+        'edit-role.component.less'
+    ]
 })
 export class EditRoleComponent extends AppComponentBase {
     @ViewChild('editRoleModal') modal: ModalDirective;

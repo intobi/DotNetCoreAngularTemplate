@@ -6,7 +6,10 @@ import { finalize } from 'rxjs/operators';
 
 @Component({
     selector: 'create-role-modal',
-    templateUrl: './create-role.component.html'
+    templateUrl: './create-role.component.html',
+    styleUrls: [
+        './create-role.component.less'
+    ]
 })
 export class CreateRoleComponent extends AppComponentBase implements OnInit {
     @ViewChild('createRoleModal') modal: ModalDirective;

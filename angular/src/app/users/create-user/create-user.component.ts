@@ -6,7 +6,10 @@ import { finalize } from 'rxjs/operators';
 
 @Component({
   selector: 'create-user-modal',
-  templateUrl: './create-user.component.html'
+  templateUrl: './create-user.component.html',
+  styleUrls: [
+    './create-user.component.less'
+]
 })
 export class CreateUserComponent extends AppComponentBase implements OnInit {
 

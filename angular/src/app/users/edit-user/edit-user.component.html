@@ -88,10 +88,10 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button [disabled]="saving" type="button" class="btn btn-default waves-effect" (click)="close()">
+                    <button [disabled]="saving" type="button" class="btn-back" (click)="close()">
                         {{l("Cancel")}}
                     </button>
-                    <button [disabled]="!editUserForm.form.valid" type="submit" class="btn btn-primary waves-effect">
+                    <button [disabled]="!editUserForm.form.valid" type="submit" class="btn-intobi">
                         {{l("Save")}}
                     </button>
                 </div>

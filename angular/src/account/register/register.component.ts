@@ -40,6 +40,7 @@ export class RegisterComponent extends AppComponentBase implements AfterViewInit
 
     save(): void {
         console.log(123,this.model);
+        console.log(1232,RegisterOutput);
         this.saving = true;
         this._accountService.register(this.model)
             .pipe(finalize(() => { this.saving = false; }))

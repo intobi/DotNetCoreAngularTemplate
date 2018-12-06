@@ -5,6 +5,9 @@ import { AppAuthService } from '@shared/auth/app-auth.service';
 @Component({
     templateUrl: './sidebar-user-area.component.html',
     selector: 'sidebar-user-area',
+    styleUrls: [
+        './sidebar-user-area.component.less'
+    ],
     encapsulation: ViewEncapsulation.None
 })
 export class SideBarUserAreaComponent extends AppComponentBase implements OnInit {

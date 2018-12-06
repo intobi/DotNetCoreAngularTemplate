@@ -6,7 +6,10 @@ import { finalize } from 'rxjs/operators';
 
 @Component({
     selector: 'edit-user-modal',
-    templateUrl: './edit-user.component.html'
+    templateUrl: './edit-user.component.html',
+    styleUrls: [
+        './edit-user.component.less'
+    ]
 })
 export class EditUserComponent extends AppComponentBase {
 

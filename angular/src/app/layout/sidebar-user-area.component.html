@@ -1,11 +1,6 @@
-    <div class="user-info">
-        <img src="assets/images/logo.svg" width="230" height="80" alt="User" />
-    <div class="info-container">
-        <div class="btn-group user-helper-dropdown">
-            <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
-            <ul class="dropdown-menu pull-right">
-                <li><a (click)="logout()"><i class="material-icons">input</i>{{l('Logout')}}</a></li>
-            </ul>
-        </div>
-    </div>
+<div class="user-info">
+    <!-- <h5>sasas</h5>
+    <p>sasa</p> -->
+    <div class="name">{{shownLoginName}}</div>
+    <div class="email">{{appSession.user.emailAddress}}</div>
 </div>
