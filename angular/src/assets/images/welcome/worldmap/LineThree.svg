@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368.323 124.668">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #bcc4db;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 3.026 3.026;
+      }
+
+      .cls-3 {
+        stroke-dasharray: 2.977 2.977;
+      }
+    </style>
+  </defs>
+  <g id="Group_600" data-name="Group 600" transform="translate(0.49 0.503)">
+    <g id="Group_599" data-name="Group 599">
+      <path id="Path_1101" data-name="Path 1101" class="cls-1" d="M127.1,225.552c.139-.7.418-1.394.558-1.952" transform="translate(-127.1 -123.082)"/>
+      <path id="Path_1102" data-name="Path 1102" class="cls-2" d="M128.4,239.031a96.739,96.739,0,0,1,113.074-62.323" transform="translate(-126.587 -142.557)"/>
+      <path id="Path_1103" data-name="Path 1103" class="cls-1" d="M211,176.676c.7.139,1.394.418,1.952.558a16.41,16.41,0,0,1,1.394-1.534" transform="translate(-94.022 -141.967)"/>
+      <path id="Path_1104" data-name="Path 1104" class="cls-3" d="M215.6,182.311c21.332-19.8,118.233-91.881,241.624,89.79" transform="translate(-92.209 -151.505)"/>
+      <path id="Path_1105" data-name="Path 1105" class="cls-1" d="M389.8,239.2a11.632,11.632,0,0,1,1.115,1.673" transform="translate(-23.53 -116.932)"/>
+    </g>
+  </g>
+</svg>

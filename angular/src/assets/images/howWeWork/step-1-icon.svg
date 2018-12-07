@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90 90">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #eff1f8;
+      }
+
+      .cls-3 {
+        fill: #ffcda1;
+      }
+
+      .cls-4 {
+        fill: #ff8820;
+      }
+
+      .cls-5 {
+        fill: #e8954c;
+      }
+
+      .cls-6 {
+        fill: #cb6c19;
+      }
+
+      .cls-7 {
+        fill: #74ceff;
+      }
+
+      .cls-8 {
+        fill: #05aded;
+      }
+
+      .cls-9 {
+        fill: #a1deff;
+      }
+
+      .cls-10 {
+        fill: #7fd0fc;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f1f3f8"/>
+      <stop offset="1" stop-color="#f1f3f8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="_1" data-name="1" transform="translate(-836 -1819)">
+    <path id="Path_653" data-name="Path 653" class="cls-1" d="M67.417,0c24.82,0,22.47,20.147,22.47,45S47.3,90,22.477,90,.007,69.853.007,45,42.6,0,67.417,0Z" transform="translate(836.053 1819)"/>
+    <circle id="Ellipse_62" data-name="Ellipse 62" class="cls-2" cx="40" cy="40" r="40" transform="translate(836 1829)"/>
+    <g id="magnifying-glass" transform="translate(836 1828.959)">
+      <path id="Path_2214" data-name="Path 2214" class="cls-3" d="M10.473,313.383l-5.248-5.249L0,302.907l26.3-26.3,8.814,8.816,1.659,1.66Z" transform="translate(0 -233.342)"/>
+      <path id="Path_2215" data-name="Path 2215" class="cls-4" d="M38.686,341.6l-5.248-5.249,26.3-26.3,3.588,3.589,1.659,1.66Z" transform="translate(-28.213 -261.563)"/>
+      <path id="Path_2216" data-name="Path 2216" class="cls-5" d="M55.538,392.4l-5.248-5.249-5.226-5.226,3.32-3.321,5.226,5.227,5.247,5.249Z" transform="translate(-38.023 -319.408)"/>
+      <path id="Path_2217" data-name="Path 2217" class="cls-6" d="M83.76,420.624l-5.248-5.249,3.32-3.319,5.247,5.249Z" transform="translate(-66.244 -347.628)"/>
+      <path id="Path_2218" data-name="Path 2218" class="cls-7" d="M164.381,58.954a29.258,29.258,0,0,1-20.83-8.629l-.011-.011A29.461,29.461,0,0,1,185.2,8.648l.009.009a29.463,29.463,0,0,1-20.83,50.3Z" transform="translate(-113.84 0)"/>
+      <path id="Path_2219" data-name="Path 2219" class="cls-8" d="M231.751,96.795a29.454,29.454,0,0,1-41.659,0l-.011-.011,41.661-41.666.009.009a29.464,29.464,0,0,1,0,41.668Z" transform="translate(-160.381 -46.47)"/>
+      <path id="Path_2220" data-name="Path 2220" class="cls-9" d="M194.3,89.249l-.011-.011A21.151,21.151,0,0,1,224.2,59.325l.009.009A21.151,21.151,0,0,1,194.3,89.249Z" transform="translate(-158.714 -44.801)"/>
+      <path id="Path_2221" data-name="Path 2221" class="cls-10" d="M227.7,122.645l-.011-.011,29.91-29.913.009.009A21.151,21.151,0,0,1,227.7,122.645Z" transform="translate(-192.109 -78.197)"/>
+    </g>
+  </g>
+</svg>

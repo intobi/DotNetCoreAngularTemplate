@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90 90">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #eff1f8;
+      }
+
+      .cls-3 {
+        fill: #f7bc18;
+      }
+
+      .cls-4 {
+        fill: #ffcd41;
+      }
+
+      .cls-5 {
+        fill: #84640b;
+      }
+
+      .cls-6 {
+        fill: #a07c19;
+      }
+
+      .cls-7 {
+        fill: #ffeebf;
+      }
+
+      .cls-8 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f1f3f8"/>
+      <stop offset="1" stop-color="#f1f3f8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="_1" data-name="1" transform="translate(-836 -1819)">
+    <path id="Path_653" data-name="Path 653" class="cls-1" d="M67.417,0c24.82,0,22.47,20.147,22.47,45S47.3,90,22.477,90,.007,69.853.007,45,42.6,0,67.417,0Z" transform="translate(836.053 1819)"/>
+    <circle id="Ellipse_62" data-name="Ellipse 62" class="cls-2" cx="40" cy="40" r="40" transform="translate(836 1829)"/>
+    <g id="smiley" transform="translate(836 1829)">
+      <path id="Path_2318" data-name="Path 2318" class="cls-3" d="M247.5,0V57.374a17.452,17.452,0,0,0,16.309-11.383l6.065,2.237A23.944,23.944,0,0,1,247.5,63.838V80a40,40,0,0,0,0-80Zm12.285,39.028a6.465,6.465,0,1,1,6.465-6.465A6.472,6.472,0,0,1,259.785,39.028Z" transform="translate(-207.5)"/>
+      <path id="Path_2319" data-name="Path 2319" class="cls-4" d="M17.626,48.228l6.065-2.237A17.452,17.452,0,0,0,40,57.374V0a40,40,0,0,0,0,80V63.838A23.944,23.944,0,0,1,17.626,48.228ZM27.715,26.1a6.465,6.465,0,1,1-6.465,6.465A6.472,6.472,0,0,1,27.715,26.1Z"/>
+      <path id="Path_2320" data-name="Path 2320" class="cls-5" d="M289.979,161.486a6.465,6.465,0,1,0,6.465,6.465A6.472,6.472,0,0,0,289.979,161.486Z" transform="translate(-237.694 -135.387)"/>
+      <path id="Path_2321" data-name="Path 2321" class="cls-6" d="M137.951,174.415a6.465,6.465,0,1,0-6.465-6.465A6.472,6.472,0,0,0,137.951,174.415Z" transform="translate(-110.236 -135.387)"/>
+      <path id="Path_2322" data-name="Path 2322" class="cls-7" d="M269.874,286.807l-6.065-2.237A17.452,17.452,0,0,1,247.5,295.953v6.465A23.944,23.944,0,0,0,269.874,286.807Z" transform="translate(-207.5 -238.579)"/>
+      <path id="Path_2323" data-name="Path 2323" class="cls-8" d="M115.125,284.57l-6.065,2.237a23.944,23.944,0,0,0,22.374,15.611v-6.465A17.452,17.452,0,0,1,115.125,284.57Z" transform="translate(-91.434 -238.579)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90 90">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #46debf;
+      }
+
+      .cls-3 {
+        fill: #32bca0;
+      }
+
+      .cls-4 {
+        fill: #d0fff5;
+      }
+
+      .cls-5 {
+        fill: #bcf7eb;
+      }
+
+      .cls-6 {
+        fill: #a1deff;
+      }
+
+      .cls-7 {
+        fill: #1abffe;
+      }
+
+      .cls-8 {
+        fill: #4ca6e8;
+      }
+
+      .cls-9 {
+        fill: #198dcb;
+      }
+
+      .cls-10 {
+        fill: #ffcda1;
+      }
+
+      .cls-11 {
+        fill: #ff8820;
+      }
+
+      .cls-12 {
+        fill: #e8954c;
+      }
+
+      .cls-13 {
+        fill: #cb6c19;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f1f3f8"/>
+      <stop offset="1" stop-color="#f1f3f8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="_1" data-name="1" transform="translate(-836 -1819)">
+    <path id="Path_653" data-name="Path 653" class="cls-1" d="M67.417,0c24.82,0,22.47,20.147,22.47,45S47.3,90,22.477,90,.007,69.853.007,45,42.6,0,67.417,0Z" transform="translate(836.053 1819)"/>
+    <g id="mobile-phone" transform="translate(790.15 1829)">
+      <path id="Path_1314" data-name="Path 1314" class="cls-2" d="M106.5,80V66.712l2.939-29.529L106.5,12.173V0h46.242V12.173L149.953,38.12l2.784,28.262V80H106.5Z" transform="translate(-51.266)"/>
+      <path id="Path_1315" data-name="Path 1315" class="cls-3" d="M256,0h23.121V12.173l-3.093,24.306,3.093,30.232V80H256Z" transform="translate(-177.65)"/>
+      <rect id="Rectangle_281" data-name="Rectangle 281" class="cls-4" width="46.242" height="54.208" transform="translate(55.23 12.174)"/>
+      <rect id="Rectangle_282" data-name="Rectangle 282" class="cls-5" width="23.12" height="54.208" transform="translate(78.35 12.174)"/>
+      <path id="Path_1316" data-name="Path 1316" class="cls-6" d="M254.514,178.276l-4.45-4.5H227.608V145.81H264.5v27.97h-5.535Z" transform="translate(-153.649 -123.027)"/>
+      <path id="Path_1317" data-name="Path 1317" class="cls-7" d="M355.34,178.276l-4.45-4.5h-4.011V145.81h18.445v27.97h-5.535Z" transform="translate(-254.474 -123.027)"/>
+      <rect id="Rectangle_283" data-name="Rectangle 283" class="cls-8" width="14.553" height="4.687" transform="translate(85.128 34.423)"/>
+      <rect id="Rectangle_284" data-name="Rectangle 284" class="cls-9" width="7.276" height="4.687" transform="translate(92.405 34.423)"/>
+      <path id="Path_1318" data-name="Path 1318" class="cls-10" d="M55.835,223.158l-4.449-4.5H45.85v-27.97H82.741v27.97H60.285Z" transform="translate(0 -160.896)"/>
+      <path id="Path_1319" data-name="Path 1319" class="cls-11" d="M165.121,190.692h18.445v27.97H165.121Z" transform="translate(-100.826 -160.896)"/>
+      <rect id="Rectangle_285" data-name="Rectangle 285" class="cls-12" width="14.553" height="4.687" transform="translate(57.019 41.437)"/>
+      <rect id="Rectangle_286" data-name="Rectangle 286" class="cls-13" width="7.276" height="4.687" transform="translate(64.295 41.437)"/>
+    </g>
+  </g>
+</svg>

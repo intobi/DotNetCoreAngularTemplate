@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f70;
+      }
+
+      .cls-2 {
+        fill: #ff8820;
+      }
+
+      .cls-3 {
+        fill: #ebebeb;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="HTML5_Logo" data-name="HTML5 Logo" transform="translate(-74.6 -100.6)">
+    <path id="Path_3442" data-name="Path 3442" class="cls-1" d="M78.693,145.617,74.6,100.6h45l-4.093,44.993L97.063,150.6" transform="translate(0)"/>
+    <path id="Path_3443" data-name="Path 3443" class="cls-2" d="M256,173.477V131h18.394l-3.51,38.405" transform="translate(-158.9 -26.705)"/>
+    <path id="Path_3444" data-name="Path 3444" class="cls-3" d="M142,176.3h14.14v5.518h-7.963l.521,5.651h7.442v5.506h-12.6m.248,2.771h5.656l.4,4.412,6.3,1.653v5.761l-11.56-3.16" transform="translate(-59.04 -66.5)"/>
+    <path id="Path_3445" data-name="Path 3445" class="cls-4" d="M269.915,176.3H255.8v5.518h13.594m-.509,5.651H255.8v5.518h6.946l-.657,7.171L255.8,201.81v5.737l11.535-3.136" transform="translate(-158.725 -66.5)"/>
+  </g>
+</svg>

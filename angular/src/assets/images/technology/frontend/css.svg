@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #05aded;
+      }
+
+      .cls-2 {
+        fill: #74ceff;
+      }
+
+      .cls-3 {
+        fill: #ebebeb;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="CSS3_logo_and_wordmark" transform="translate(-193.633 -376.982)">
+    <g id="g3013" transform="translate(193.633 376.982)">
+      <path id="polygon2989" class="cls-1" d="M118.633,100.62l-4.009,44.995L96.606,150.62l-17.969-5-4-45Z" transform="translate(-74.633 -100.62)"/>
+      <path id="polygon2991" class="cls-2" d="M270.56,169.344l3.426-38.45H256v42.495Z" transform="translate(-234 -127.214)"/>
+      <path id="polygon2993" class="cls-3" d="M150.31,268.217l.494,5.519H163.13v-5.519Z" transform="translate(-141.13 -247.847)"/>
+      <path id="polygon2995" class="cls-3" d="M155.944,176.3H142.132l.5,5.519h13.312Z" transform="translate(-133.944 -167.106)"/>
+      <path id="polygon2997" class="cls-3" d="M168.489,348.131v-5.742l-.024.006-6.135-1.66-.392-4.4h-5.53l.772,8.666,11.283,3.139Z" transform="translate(-146.489 -307.684)"/>
+      <path id="polygon3005" class="cls-4" d="M262.626,193l-.639,7.158-6.144,1.661v5.742l11.292-3.136.083-.932,1.294-14.53.134-1.482.994-11.171h-13.8v5.519H263.6l-.5,5.652h-7.261V193Z" transform="translate(-233.862 -167.106)"/>
+    </g>
+  </g>
+</svg>

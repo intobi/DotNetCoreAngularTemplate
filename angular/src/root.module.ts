@@ -21,6 +21,7 @@ import { ModalModule } from 'ngx-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 
 import * as _ from 'lodash';
+import { ContentComponent } from './content/content.component';
 
 export function appInitializerFactory(injector: Injector,
     platformLocation: PlatformLocation) {
@@ -97,6 +98,7 @@ export function getCurrentLanguage(): string {
     ],
     declarations: [
         RootComponent
+        
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: AbpHttpInterceptor, multi: true },
