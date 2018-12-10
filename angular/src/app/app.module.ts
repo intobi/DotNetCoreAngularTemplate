@@ -31,6 +31,9 @@ import { SideBarUserAreaComponent } from '@app/layout/sidebar-user-area.componen
 import { SideBarNavComponent } from '@app/layout/sidebar-nav.component';
 import { SideBarFooterComponent } from '@app/layout/sidebar-footer.component';
 import { RightSideBarComponent } from '@app/layout/right-sidebar.component';
+import { TenantsListComponent } from './tenants/tenants-list/tenants-list.component';
+import { TenantsSettingComponent } from './tenants/tenants-setting/tenants-setting.component';
+
 
 @NgModule({
     declarations: [
@@ -50,8 +53,9 @@ import { RightSideBarComponent } from '@app/layout/right-sidebar.component';
         SideBarUserAreaComponent,
         SideBarNavComponent,
         SideBarFooterComponent,
-        RightSideBarComponent
-    
+        RightSideBarComponent,
+        TenantsListComponent,
+        TenantsSettingComponent,
     ],
     imports: [
         CommonModule,
@@ -63,7 +67,8 @@ import { RightSideBarComponent } from '@app/layout/right-sidebar.component';
         AppRoutingModule,
         ServiceProxyModule,
         SharedModule,
-        NgxPaginationModule
+        NgxPaginationModule,
+      
     ],
     providers: [
 

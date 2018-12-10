@@ -1,31 +1,29 @@
-import { Component, Injector, ViewChild, ElementRef } from '@angular/core';
+import { Component, Injector, ViewChild } from '@angular/core';
 import { appModuleAnimation } from '@shared/animations/routerTransition';
 import { TenantServiceProxy, TenantDto, PagedResultDtoOfTenantDto } from '@shared/service-proxies/service-proxies';
-
+import { Router } from "@angular/router";
 import { PagedListingComponentBase, PagedRequestDto } from 'shared/paged-listing-component-base';
 import { EditTenantComponent } from 'app/tenants/edit-tenant/edit-tenant.component';
 import { CreateTenantComponent } from 'app/tenants/create-tenant/create-tenant.component';
 import { finalize } from 'rxjs/operators';
 
 @Component({
-    templateUrl: './tenants.component.html',
-    styleUrls: [
-        './tenants.component.less'
-    ],
-    animations: [appModuleAnimation()]
+  selector: 'app-tenants-list',
+  templateUrl: './tenants-list.component.html',
+  styleUrls: ['./tenants-list.component.less'],
+  animations: [appModuleAnimation()]
 })
-export class TenantsComponent extends PagedListingComponentBase<TenantDto> {
+export class TenantsListComponent extends PagedListingComponentBase<TenantDto> {
 
-    @ViewChild('createTenantModal') createTenantModal: CreateTenantComponent;
+  @ViewChild('createTenantModal') createTenantModal: CreateTenantComponent;
     @ViewChild('editTenantModal') editTenantModal: EditTenantComponent;
-    @ViewChild('content') content: ElementRef;
 
     tenants: TenantDto[] = [];
-    activeTabs: string[] = ['TenantsList'];
 
     constructor(
         injector: Injector,
-        private _tenantService: TenantServiceProxy
+        private _tenantService: TenantServiceProxy,
+        private router: Router
     ) {
         super(injector);
     }
@@ -57,17 +55,15 @@ export class TenantsComponent extends PagedListingComponentBase<TenantDto> {
 
     // Show modals
     createTenant(): void {
+       
         this.createTenantModal.show();
     }
 
     editTenant(tenant:TenantDto): void{
         this.editTenantModal.show(tenant.id);
-    }
-    tabClick(name) {
-        if (this.activeTabs.indexOf(name) == -1) {
-            this.activeTabs = [];
-            this.activeTabs.push(name)
-        }
+      
+     
     }
     
 }
+
