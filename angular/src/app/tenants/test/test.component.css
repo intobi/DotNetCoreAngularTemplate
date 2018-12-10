@@ -1,0 +1,8 @@
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: unset;
+  }
+  .nav-tabs>li {
+    float: right;
+    margin-bottom: -1px;
+}
+  

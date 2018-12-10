@@ -15,6 +15,10 @@
                     <a class="nav-link" id="tenants-setting-tab" data-toggle="tab" href="#tenants-setting" role="presentation"
                         aria-controls="tenants-setting" aria-selected="false">Settings</a>
                 </li>
+                <li class="nav-item "  (click)="tabClick('Test')">
+                        <a class="nav-link" id="test-tab" data-toggle="tab" href="#test" role="presentation"
+                            aria-controls="test" aria-selected="false">test</a>
+                    </li>
                 
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -24,7 +28,9 @@
                 <div class="tab-pane animated fade" id="tenants-setting" role="tabpanel" aria-labelledby="tenants-setting-tab">
                     <app-tenants-setting *ngIf="activeTabs.indexOf('TenantsSetting') != -1"> </app-tenants-setting>
                 </div>
-               
+                <div class="tab-pane animated fade" id="test" role="tabpanel" aria-labelledby="test-tab">
+                        <app-test *ngIf="activeTabs.indexOf('Test') != -1"> </app-test>
+                    </div>
             </div>
         </div>
 

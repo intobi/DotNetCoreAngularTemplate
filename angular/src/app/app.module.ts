@@ -33,6 +33,11 @@ import { SideBarFooterComponent } from '@app/layout/sidebar-footer.component';
 import { RightSideBarComponent } from '@app/layout/right-sidebar.component';
 import { TenantsListComponent } from './tenants/tenants-list/tenants-list.component';
 import { TenantsSettingComponent } from './tenants/tenants-setting/tenants-setting.component';
+import { TestComponent } from './tenants/test/test.component';
+import { TestoneComponent } from './tenants/test/testone/testone.component';
+import { TesttwoComponent } from './tenants/test/testtwo/testtwo.component';
+import { TesttreeComponent } from './tenants/test/testtree/testtree.component';
+import { TestfourComponent } from './tenants/test/testfour/testfour.component';
 
 
 @NgModule({
@@ -56,6 +61,11 @@ import { TenantsSettingComponent } from './tenants/tenants-setting/tenants-setti
         RightSideBarComponent,
         TenantsListComponent,
         TenantsSettingComponent,
+        TestComponent,
+        TestoneComponent,
+        TesttwoComponent,
+        TesttreeComponent,
+        TestfourComponent,
     ],
     imports: [
         CommonModule,
