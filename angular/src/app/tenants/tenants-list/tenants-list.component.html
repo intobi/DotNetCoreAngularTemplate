@@ -30,7 +30,7 @@
               </tr>
           </thead>
           <tbody>
-              <tr *ngFor="let tenant of tenants | paginate: { id: 'server', itemsPerPage: pageSize, currentPage: pageNumber, totalItems: totalItems }">
+              <tr [routerLink]="['/app/tenants/edit', tenant.id]" *ngFor="let tenant of tenants | paginate: { id: 'server', itemsPerPage: pageSize, currentPage: pageNumber, totalItems: totalItems }">
                   <td>
                  {{tenant.tenancyName}}
                   </td>
@@ -40,7 +40,7 @@
                       <i class="material-icons" *ngIf="!tenant.isActive" style="color:red;">indeterminate_check_box</i>
                   </td>
                   <td style="cursor: pointer" >
-                   <i style="color: black" (click)="editTenant(tenant)" class="material-icons">create</i>
+                   <i style="color: black" class="material-icons">create</i>
                  <i style="color: black" (click)="delete(tenant)" class="material-icons">delete_sweep</i>
                   </td>
               </tr>
@@ -58,4 +58,4 @@
 
 
 <create-tenant-modal #createTenantModal (modalSave)="refresh()"></create-tenant-modal>
-<edit-tenant-modal #editTenantModal (modalSave)="refresh()"></edit-tenant-modal>
+<!-- <edit-tenant-modal #editTenantModal (modalSave)="refresh()"></edit-tenant-modal> -->

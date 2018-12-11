@@ -33,11 +33,19 @@ import { SideBarFooterComponent } from '@app/layout/sidebar-footer.component';
 import { RightSideBarComponent } from '@app/layout/right-sidebar.component';
 import { TenantsListComponent } from './tenants/tenants-list/tenants-list.component';
 import { TenantsSettingComponent } from './tenants/tenants-setting/tenants-setting.component';
-import { TestComponent } from './tenants/test/test.component';
-import { TestoneComponent } from './tenants/test/testone/testone.component';
-import { TesttwoComponent } from './tenants/test/testtwo/testtwo.component';
-import { TesttreeComponent } from './tenants/test/testtree/testtree.component';
-import { TestfourComponent } from './tenants/test/testfour/testfour.component';
+import { SecurityComponent } from './tenants/edit-tenant/security/security.component';
+import { TaskComponent } from './tenants/edit-tenant/task/task.component';
+import { InfoComponent } from './tenants/edit-tenant/info/info.component';
+import { ProjectControlComponent } from './tenants/edit-tenant/security/project-control/project-control.component';
+import { TaskControlComponent } from './tenants/edit-tenant/security/task-control/task-control.component';
+import { GlobalControlComponent } from './tenants/edit-tenant/security/global-control/global-control.component';
+import { TaskLogsComponent } from './tenants/edit-tenant/task/task-logs/task-logs.component';
+import { TaskEditorComponent } from './tenants/edit-tenant/task/task-editor/task-editor.component';
+import { TaskBoardComponent } from './tenants/edit-tenant/task/task-board/task-board.component';
+
+
+
+
 
 
 @NgModule({
@@ -61,11 +69,16 @@ import { TestfourComponent } from './tenants/test/testfour/testfour.component';
         RightSideBarComponent,
         TenantsListComponent,
         TenantsSettingComponent,
-        TestComponent,
-        TestoneComponent,
-        TesttwoComponent,
-        TesttreeComponent,
-        TestfourComponent,
+        SecurityComponent,
+        TaskComponent,
+        InfoComponent,
+        ProjectControlComponent,
+        TaskControlComponent,
+        GlobalControlComponent,
+        TaskLogsComponent,
+        TaskEditorComponent,
+        TaskBoardComponent,
+    
     ],
     imports: [
         CommonModule,

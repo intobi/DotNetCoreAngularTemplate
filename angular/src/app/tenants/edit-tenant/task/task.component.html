@@ -1,0 +1,33 @@
+<div class="row clearfix" [@routerTransition]>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <div #content class="body">
+        
+        <ul class="nav nav-tabs tab-nav-right" role="tablist">
+          <li class="nav-item active" (click)="tabClick('TaskBoard')">
+            <a class="nav-link" id="task-board-tab" data-toggle="tab" href="#task-editor" role="presentation" aria-controls="task-editor"
+              aria-selected="true">Task Board</a>
+          </li>
+          <li class="nav-item " (click)="tabClick('TaskEditor')">
+            <a class="nav-link" id="task-editor-tab" data-toggle="tab" href="#task-editor" role="presentation" aria-controls="task-editor"
+              aria-selected="false">Task Editor</a>
+          </li>
+          <li class="nav-item" (click)="tabClick('TaskLogs')">
+            <a class="nav-link" id="task-logs-tab" data-toggle="tab" href="#task-logs" role="presentation" aria-controls="task-logs"
+              aria-selected="false">Task Logs</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane animated fadeIn active" id="task-board" role="tabpanel" aria-labelledby="task-board-tab">
+            <h1>dsds</h1>
+          </div>
+          <div class="tab-pane animated fade" id="task-editor" role="tabpanel" aria-labelledby="task-editor-tab">
+            <h1>edw</h1>
+          </div>
+          <div class="tab-pane animated fade" id="task-logs" role="tabpanel" aria-labelledby="task-logs-tab">
+            <h1>sss</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

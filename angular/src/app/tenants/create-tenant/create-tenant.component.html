@@ -1,10 +1,6 @@
 ﻿<div bsModal #createTenantModal="bs-modal" class="modal fade" (onShown)="onShown()" tabindex="-1" role="dialog" aria-labelledby="createUserModal" aria-hidden="true" [config]="{backdrop: 'static'}">
     <div class="modal-dialog">
-
-
-        
         <div #modalContent class="modal-content">
-
             <form *ngIf="active" #createTenantForm="ngForm" id="frm_create_tenant" novalidate (ngSubmit)="save()">
 
                 <div class="modal-header">
@@ -54,9 +50,7 @@
                     <button [disabled]="saving" type="button" class="btn btn-default" (click)="close()">{{l("Cancel")}}</button>
                     <button [disabled]="!createTenantForm.form.valid || saving" type="submit" class="btn btn-primary blue">{{l("Save")}}</button>
                 </div>
-
             </form>
-
         </div>
     </div>
 </div>

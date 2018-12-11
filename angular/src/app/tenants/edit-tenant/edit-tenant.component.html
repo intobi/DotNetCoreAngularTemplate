@@ -1,47 +1,161 @@
-﻿<div bsModal #editTenantModal="bs-modal" class="modal fade" (onShown)="onShown()" tabindex="-1" role="dialog" aria-labelledby="editUserModal" aria-hidden="true" [config]="{backdrop: 'static'}">
-    <div class="modal-dialog">
-
-        <div #modalContent class="modal-content">
-
-            <form *ngIf="active" #editTenantForm="ngForm" id="frm_edit_tenant" novalidate (ngSubmit)="save()">
-
-                <div class="modal-header">
-                    <button type="button" class="close" (click)="close()" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title">
-                        <span>Edit Project</span>
-                    </h4>
-                </div>
-
-                <div class="modal-body">
-                    <div class="form-group form-float">
-                        <div class="form-line">
-                            <input class="form-control" type="text" name="TenancyName" [(ngModel)]="tenant.tenancyName" required maxlength="64" minlength="2">
-                            <label class="form-label">Project Name</label>
-                        </div>
-                    </div>
-                    <div class="form-group form-float">
-                        <div class="form-line">
-                            <input type="text" name="Name" class="form-control" [(ngModel)]="tenant.name" required maxlength="128">
-                            <label class="form-label">Team Lead</label>
-                        </div>
-                    </div>
-                    <div class="form-group form-float">
-                        <div class="">
-                            <input id="isactive" type="checkbox" name="IsActive" [(ngModel)]="tenant.isActive" checked class="form-control" />
-                            <label for="isactive" class="form-label">{{l("IsActive")}}</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal-footer">
-                    <button [disabled]="saving" type="button" class="btn btn-default" (click)="close()">{{l("Cancel")}}</button>
-                    <button [disabled]="!editTenantForm.form.valid || saving" type="submit" class="btn btn-primary blue">{{l("Save")}}</button>
-                </div>
-
-            </form>
-
+﻿<div class="row clearfix" [@routerTransition]>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i
+                            class="material-icons">more_vert</i></a></li>
+            </ul>
         </div>
+        <div class="nav-tabs-overlap">
+            <div class="arrow-left"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <div #content class="body">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li class="nav-item active" (click)="tabClick('TestOne')">
+                    <a class="nav-link" id="testone-tab" data-toggle="tab" href="#testone" role="presentation"
+                        aria-controls="testone" aria-selected="true">Edit</a>
+                </li>
+                <li class="nav-item " (click)="tabClick('TestTwo')">
+                    <a class="nav-link" id="testtwo-tab" data-toggle="tab" href="#testtwo" role="presentation"
+                        aria-controls="testtwo" aria-selected="false">Security</a>
+                </li>
+                <li class="nav-item" (click)="tabClick('TestTree')">
+                    <a class="nav-link" id="testtree-tab" data-toggle="tab" href="#testtree" role="presentation"
+                        aria-controls="testtree" aria-selected="false">Task Meneger</a>
+                </li>
+                <li class="nav-item" (click)="tabClick('TestFour')">
+                    <a class="nav-link" id="testfour-tab" data-toggle="tab" href="#testfour" role="presentation"
+                        aria-controls="testfour" aria-selected="false">info</a>
+                </li>
+
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane animated fadeIn active" id="testone" role="tabpanel" aria-labelledby="testone-tab">
+                    <div class="card main-content">
+                        <div class="header">
+                            <h2>Projects: "{{tenant.tenancyName}}"</h2>
+                        </div>
+                        <div class="body table-responsive">
+                            <form #editTenantForm="ngForm" id="frm_edit_tenant" novalidate (ngSubmit)="save()">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">
+                                        <span>Edit</span>
+                                    </h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <p class="subtitle">Project Name</p>
+                                            <input class="form-control" type="text" name="TenancyName" [(ngModel)]="tenant.tenancyName"
+                                                required maxlength="64" minlength="2">
+                                            <label class="form-label"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <p class="subtitle">Admin Name</p>
+                                            <input type="text" name="Name" class="form-control" [(ngModel)]="tenant.name"
+                                                required maxlength="128">
+                                            <label class="form-label"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <div class="">
+                                            <input id="isactive" type="checkbox" name="IsActive" [(ngModel)]="tenant.isActive"
+                                                checked class="form-control" />
+                                            <label for="isactive" class="form-label">{{l("IsActive")}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <p class="subtitle"> Name</p>
+                                                    <input type="text" name="Name" class="form-control" required
+                                                        maxlength="128">
+                                                    <label class="form-label"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <p class="subtitle"> Name</p>
+                                                    <input type="text" name="Name" class="form-control" required
+                                                        maxlength="128">
+                                                    <label class="form-label"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <p class="subtitle"> Name</p>
+                                                    <input type="text" name="Name" class="form-control" required
+                                                        maxlength="128">
+                                                    <label class="form-label"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <p class="subtitle"> Name</p>
+                                                    <input type="text" name="Name" class="form-control" required
+                                                        maxlength="128">
+                                                    <label class="form-label"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <p class="subtitle"> Name</p>
+                                                    <input type="text" name="Name" class="form-control" required
+                                                        maxlength="128">
+                                                    <label class="form-label"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <p class="subtitle"> Name</p>
+                                                    <input type="text" name="Name" class="form-control" required
+                                                        maxlength="128">
+                                                    <label class="form-label"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button [disabled]="!editTenantForm.form.valid || saving" type="submit" class="btn-intobi">{{l("Save")}}</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane animated fade" id="testtwo" role="tabpanel" aria-labelledby="testtwo-tab">
+                    <app-security *ngIf="activeTabs.indexOf('TestTwo') != -1"> </app-security>
+                </div>
+                <div class="tab-pane animated fade" id="testtree" role="tabpanel" aria-labelledby="testtree-tab">
+                    <app-task *ngIf="activeTabs.indexOf('TestTree') != -1"> </app-task>
+                </div>
+                <div class="tab-pane animated fade" id="testfour" role="tabpanel" aria-labelledby="testfour-tab">
+                    <app-info *ngIf="activeTabs.indexOf('TestFour') != -1"> </app-info>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </div>

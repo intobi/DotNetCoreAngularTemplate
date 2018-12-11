@@ -59,11 +59,11 @@ export class TenantsListComponent extends PagedListingComponentBase<TenantDto> {
         this.createTenantModal.show();
     }
 
-    editTenant(tenant:TenantDto): void{
-        this.editTenantModal.show(tenant.id);
+    // editTenant(tenant:TenantDto): void{
+    //     this.editTenantModal.show(tenant.id);
       
      
-    }
+    // }
     
 }
 
