@@ -48,6 +48,7 @@ import { ButtonTbcComponent } from './common/template-builder/components/button-
 import { ImageTbcComponent } from './common/template-builder/components/image-tbc/image-tbc.component';
 import { TextTbcComponent } from './common/template-builder/components/text-tbc/text-tbc.component';
 import { VideoTbcComponent } from './common/template-builder/components/video-tbc/video-tbc.component';
+import { ModalCreateComponent } from './tenants/edit-tenant/task/task-board/modal-create/modal-create.component';
 
 
 
@@ -91,6 +92,7 @@ import { VideoTbcComponent } from './common/template-builder/components/video-tb
         ImageTbcComponent,
         TextTbcComponent,
         VideoTbcComponent,
+        ModalCreateComponent,
     
     ],
     imports: [

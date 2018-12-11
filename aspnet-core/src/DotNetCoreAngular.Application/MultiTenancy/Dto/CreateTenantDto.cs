@@ -18,10 +18,6 @@ namespace DotNetCoreAngular.MultiTenancy.Dto
         public string Name { get; set; }
 
         [Required]
-        [StringLength(AbpTenantBase.MaxNameLength)]
-        public string Description { get; set; }
-
-        [Required]
         [StringLength(AbpUserBase.MaxEmailAddressLength)]
         public string AdminEmailAddress { get; set; }
 

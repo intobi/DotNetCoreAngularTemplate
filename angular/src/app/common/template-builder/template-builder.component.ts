@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { CreateTenantComponent } from '@app/tenants/create-tenant/create-tenant.component';
 
 @Component({
   selector: 'app-template-builder',
@@ -11,5 +12,10 @@ export class TemplateBuilderComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  @ViewChild('createTenantModal') createTenantModal: CreateTenantComponent;
+  
+  createTenant(): void {
+         
+          this.createTenantModal.show();
+      }
 }

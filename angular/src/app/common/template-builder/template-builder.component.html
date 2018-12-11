@@ -1,15 +1,13 @@
-<div class="row">
-  <div class="col-md-12">
-      <button class="btn-back" style="float: right;">Add Sprint</button>
-  </div>
+ <div class="drop-item" style="height: 55px">
+    <button class="btn-back">Add Sprint</button>
 </div>
-
+<br>
 <div class="row">
   <div class="col-md-12">
     <h4>Sprint #1</h4>
   </div>
   <div class="col-md-12" dndDropzone>
-      <div class="col-md-6 text-center"> <button class="btn-intobi">Add Task</button></div>
+      <div class="col-md-6 text-center"> <button (click)="createTenant()" class="btn-intobi">Add Task</button></div>
       <div class="col-md-6 text-center"><button class="btn-intobi">Add Table</button></div>
   </div>
   <div class="col-md-12">
@@ -61,3 +59,4 @@
     </div>
   </div>
 </div>
+<create-tenant-modal #createTenantModal (modalSave)="refresh()"></create-tenant-modal>
