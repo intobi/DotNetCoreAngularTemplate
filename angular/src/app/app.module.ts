@@ -42,6 +42,13 @@ import { GlobalControlComponent } from './tenants/edit-tenant/security/global-co
 import { TaskLogsComponent } from './tenants/edit-tenant/task/task-logs/task-logs.component';
 import { TaskEditorComponent } from './tenants/edit-tenant/task/task-editor/task-editor.component';
 import { TaskBoardComponent } from './tenants/edit-tenant/task/task-board/task-board.component';
+import { TemplateBuilderComponent } from './common/template-builder/template-builder.component';
+import { TemplatePreviewComponent } from './common/template-builder/template-preview/template-preview.component';
+import { ButtonTbcComponent } from './common/template-builder/components/button-tbc/button-tbc.component';
+import { ImageTbcComponent } from './common/template-builder/components/image-tbc/image-tbc.component';
+import { TextTbcComponent } from './common/template-builder/components/text-tbc/text-tbc.component';
+import { VideoTbcComponent } from './common/template-builder/components/video-tbc/video-tbc.component';
+
 
 
 
@@ -78,6 +85,12 @@ import { TaskBoardComponent } from './tenants/edit-tenant/task/task-board/task-b
         TaskLogsComponent,
         TaskEditorComponent,
         TaskBoardComponent,
+        TemplateBuilderComponent,
+        TemplatePreviewComponent,
+        ButtonTbcComponent,
+        ImageTbcComponent,
+        TextTbcComponent,
+        VideoTbcComponent,
     
     ],
     imports: [

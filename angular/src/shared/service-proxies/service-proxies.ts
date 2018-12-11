@@ -2641,6 +2641,7 @@ export interface ITenantLoginInfoDto {
 export class CreateTenantDto implements ICreateTenantDto {
     tenancyName: string;
     name: string;
+    description: string;
     adminEmailAddress: string;
     connectionString: string | undefined;
     isActive: boolean | undefined;
@@ -2658,6 +2659,7 @@ export class CreateTenantDto implements ICreateTenantDto {
         if (data) {
             this.tenancyName = data["tenancyName"];
             this.name = data["name"];
+            this.description = data["description"];
             this.adminEmailAddress = data["adminEmailAddress"];
             this.connectionString = data["connectionString"];
             this.isActive = data["isActive"];
@@ -2675,6 +2677,7 @@ export class CreateTenantDto implements ICreateTenantDto {
         data = typeof data === 'object' ? data : {};
         data["tenancyName"] = this.tenancyName;
         data["name"] = this.name;
+        data["description"] = this.description;
         data["adminEmailAddress"] = this.adminEmailAddress;
         data["connectionString"] = this.connectionString;
         data["isActive"] = this.isActive;
@@ -2692,6 +2695,7 @@ export class CreateTenantDto implements ICreateTenantDto {
 export interface ICreateTenantDto {
     tenancyName: string;
     name: string;
+    description: string;
     adminEmailAddress: string;
     connectionString: string | undefined;
     isActive: boolean | undefined;

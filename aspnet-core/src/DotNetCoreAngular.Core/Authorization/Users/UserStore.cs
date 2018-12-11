@@ -8,6 +8,7 @@ namespace DotNetCoreAngular.Authorization.Users
 {
     public class UserStore : AbpUserStore<Role, User>
     {
+        public string testField { get; set; }
         public UserStore(
             IUnitOfWorkManager unitOfWorkManager, 
             IRepository<User, long> userRepository, 

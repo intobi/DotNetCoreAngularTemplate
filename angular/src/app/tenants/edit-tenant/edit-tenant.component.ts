@@ -18,8 +18,9 @@ export class EditTenantComponent extends AppComponentBase{
     @ViewChild('editTenantModal') modal: ModalDirective;
     @ViewChild('modalContent') modalContent: ElementRef;
     @ViewChild('content') content: ElementRef;
-    activeTabs: string[] = ['TestOne'];
     @Output() modalSave: EventEmitter<any> = new EventEmitter<any>();
+    
+    activeTabs: string[] = ['TestOne'];
     active: boolean = false;
     saving: boolean = false;
     tenant: TenantDto = null;

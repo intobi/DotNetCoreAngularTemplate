@@ -1,0 +1,22 @@
+<form #buttonForm="ngForm">
+    <div  [innerHTML]="transform(getHtmlPreview())"></div>
+    <div >
+      <div class="form-group">
+        <label  class="form-label">Link:</label>
+        <input  placeholder="Please enter URL"  type="text" class="form-control" name="btnUrl" 
+          required pattern="https?://.+" />
+        <div  class="invalid-feedback">
+          <div >Please fill out this field as link.</div>
+          <div >Please fill out this field.</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Text:</label>
+        <input  id="btnText" type="text" class="form-control" name="btnText"  required placeholder="Button Text"
+        />
+        <div class="invalid-feedback">
+          <div >Please fill out this field.</div>
+        </div>
+      </div>
+    </div>
+  </form>

@@ -1,0 +1,133 @@
+.sticky{
+    @media (max-width:992px){
+        display: none;
+    }
+    @media (min-width: 991px){
+        position: sticky;
+        top: 2px;
+    }
+  }
+.mobile-note{
+    display:none;
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+    @media (max-width:992px){
+        display: block;
+    }
+}
+.drop-zone{
+    background-color: #eee;
+    border: dashed 2px #ccc;
+    width: 100%;
+    margin: 15px 0 15px 0;
+    color: #bbb;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.builder-area {
+    background-color: #F7F7F7;
+    min-height: 260px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.btn-preview{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.drop-item{
+    border: 2px dashed #E7EAED;
+    font-size: 1.05em;
+    border-radius: 5px;
+    background-color: #F7F7F7;
+    flex-direction: column;
+    height: 500px;
+    color: #475E6B;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: grab;
+    &:active, &:focus{
+        cursor: grabbing;
+    }
+    &:after {
+        @dotsize: 3px;
+        position: absolute;
+        content: '';
+        width: @dotsize;
+        height: @dotsize;
+        right: @dotsize*5;
+        top: @dotsize;
+        border-radius: 1px;
+        color: #909EA6;
+        background: transparent;
+        box-shadow: @dotsize @dotsize  0 0 currentColor,
+                    @dotsize*2+2 @dotsize  0 0 currentColor,
+                    @dotsize @dotsize*2+2  0 0 currentColor,
+                    @dotsize*2+2 @dotsize*2+2  0 0 currentColor,
+                    @dotsize*2+2 @dotsize*3+4  0 0 currentColor,
+                    @dotsize @dotsize*3+4  0 0 currentColor;
+    }
+    .item-image{
+        width: 25px;
+        height: 25px;
+        margin-bottom: 5px;
+    }
+    span{
+        margin: 0 5px 0 5px;
+    }
+}
+
+.template-builder-component{
+    background: #fff;
+    min-height: 120px;
+    position: relative;
+    margin-bottom: 20px;
+    border: 2px solid #E7EAED;
+    border-radius: 5px;
+    .header {
+        margin: 0;
+        color: #475E6B;
+        cursor: grab;
+        padding: 15px;
+        position: relative;
+        border-bottom: 2px solid #E7EAED;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
+        &:active, &:focus{
+            cursor: grabbing;
+        }
+        .buttons-wrap{
+            .btn-danger{
+                margin-left: 5px;
+              }
+        }
+    }
+    .body {
+      font-size: 14px;
+      color: #555;
+      padding: 20px;
+    }
+}
+.btn-intobi {
+    padding: 10px 11px;
+    margin-top: 6px;
+    margin-bottom: 11px;
+    margin-right: 7px;
+}
+.btn-back {
+    padding: 10px 11px;
+    margin-top: 6px;
+    margin-bottom: 11px;
+    margin-right: 7px;
+}

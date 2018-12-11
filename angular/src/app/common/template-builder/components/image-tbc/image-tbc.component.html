@@ -1,0 +1,41 @@
+<!-- <form #imageForm="ngForm">
+    <div  [innerHTML]="transform(getHtmlPreview())"></div>
+    <div >
+      <div class="form-group">
+        <label class="form-label checkbox-container">Image link enabled?
+          <input id="urlYesOrNo" type="checkbox" name="urlYesOrNo" >
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Link:</label>
+        <input #imageLink="ngModel" id="imageLink" type="text" class="form-control"  name="imageLink" placeholder="Please enter URL"
+        required pattern="https?://.+" />
+        <div  class="invalid-feedback">
+          <div >Please fill out this field as link.</div>
+        </div>
+      </div>
+      <div class="form-float">
+        <label class="form-label">Upload Image</label>
+        <file-drop (onFileDrop)="dropped($event)" customstyle="filedrop">
+          <div class="preview-wrapper">
+            <img class="preview-img" [src]="src" (error)="src=null" *ngIf="src" />
+            <img class="preview-null-img" src="../assets/images/common/no-image.svg" *ngIf="!src" />
+            <p class="drag-text">Drag and Drop files here or
+              <input type="file" (change)="uploadImg($event)" name="file" id="file" accept="image/*" class="inputfile browse-file" />
+              <label class="drag-link" for="file">browse</label>
+              to upload
+            </p>
+          </div>
+        </file-drop>
+      </div>
+      <div class="form-group">
+        <div *ngIf="imageLink.invalid && urlYesOrNo && src" class="invalid-feedback">
+          <div *ngIf="imageLink.errors.required">Please enter URL.</div>
+        </div>
+        <div *ngIf="!urlYesOrNo  && !src" class="invalid-feedback">
+          <div *ngIf="!urlYesOrNo">Please upload image.</div>
+        </div>
+      </div>
+    </div>
+  </form> -->

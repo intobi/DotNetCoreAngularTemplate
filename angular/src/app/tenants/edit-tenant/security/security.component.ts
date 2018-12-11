@@ -11,12 +11,16 @@ export class SecurityComponent implements OnInit {
   constructor() { }
   activeTabs: string[] = ['TaskControl'];
   ngOnInit() {
+    console.log(this.activeTabs);
+  
   }
 
   tabClick(name) {
     if (this.activeTabs.indexOf(name) == -1) {
         this.activeTabs = [];
         this.activeTabs.push(name)
+    console.log(this.activeTabs);
+
     }
 }
 }

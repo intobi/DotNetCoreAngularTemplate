@@ -5,7 +5,7 @@
         
         <ul class="nav nav-tabs tab-nav-right" role="tablist">
           <li class="nav-item active" (click)="tabClick('TaskBoard')">
-            <a class="nav-link" id="task-board-tab" data-toggle="tab" href="#task-editor" role="presentation" aria-controls="task-editor"
+            <a class="nav-link" id="task-board-tab" data-toggle="tab" href="#task-board" role="presentation" aria-controls="task-board"
               aria-selected="true">Task Board</a>
           </li>
           <li class="nav-item " (click)="tabClick('TaskEditor')">
@@ -19,15 +19,17 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane animated fadeIn active" id="task-board" role="tabpanel" aria-labelledby="task-board-tab">
-            <h1>dsds</h1>
+           <app-task-board></app-task-board>
+
           </div>
           <div class="tab-pane animated fade" id="task-editor" role="tabpanel" aria-labelledby="task-editor-tab">
-            <h1>edw</h1>
+               <app-task-editor></app-task-editor>
           </div>
           <div class="tab-pane animated fade" id="task-logs" role="tabpanel" aria-labelledby="task-logs-tab">
-            <h1>sss</h1>
+              <app-task-logs></app-task-logs>
           </div>
         </div>
       </div>
     </div>
   </div>
+  

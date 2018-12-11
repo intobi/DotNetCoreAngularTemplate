@@ -1,33 +1,43 @@
-<div class="row clearfix" [@routerTransition]>
+<div class="row clearfix" >
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <div #content class="body">
           
-          <ul class="nav nav-tabs tab-nav-right" role="tablist">
-            <li class="nav-item active" (click)="tabClick('TaskControl')">
+          <ul class="nav nav-tabs tab-nav-right" role="tablist"> 
+
+            <li  class="nav-item active" (click)="tabClick('TaskControl')">
               <a class="nav-link" id="task-board-tab" data-toggle="tab" href="#task-control" role="presentation" aria-controls="task-control"
                 aria-selected="true">Task Control</a>
             </li>
+
             <li class="nav-item " (click)="tabClick('ProjectControl')">
               <a class="nav-link" id="project-control-tab" data-toggle="tab" href="#project-control" role="presentation" aria-controls="project-control"
                 aria-selected="false">Project Control</a>
             </li>
+
             <li class="nav-item" (click)="tabClick('Global')">
               <a class="nav-link" id="global-tab" data-toggle="tab" href="#global" role="presentation" aria-controls="global"
                 aria-selected="false">Global</a>
             </li>
+
           </ul>
           <div class="tab-content" id="pills-tabContent">
+
             <div class="tab-pane animated fadeIn active" id="task-control" role="tabpanel" aria-labelledby="task-control">
               <app-task-control *ngIf="activeTabs.indexOf('TaskControl') != -1"> </app-task-control>
             </div>
+
             <div class="tab-pane animated fade" id="project-control" role="tabpanel" aria-labelledby="project-control-tab">
               <app-project-control *ngIf="activeTabs.indexOf('ProjectControl') != -1"> </app-project-control>
             </div>
+
             <div class="tab-pane animated fade" id="global" role="tabpanel" aria-labelledby="global-tab">
             <app-global-control *ngIf="activeTabs.indexOf('Global') != -1"> </app-global-control>
             </div>
+            
           </div>
         </div>
       </div>
     </div>
+
+    
