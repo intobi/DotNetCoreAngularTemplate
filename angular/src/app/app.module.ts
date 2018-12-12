@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JsonpModule } from '@angular/http';
 import { HttpClientModule, HttpResponse } from '@angular/common/http';
 
@@ -39,7 +39,6 @@ import { InfoComponent } from './tenants/edit-tenant/info/info.component';
 import { ProjectControlComponent } from './tenants/edit-tenant/security/project-control/project-control.component';
 import { TaskControlComponent } from './tenants/edit-tenant/security/task-control/task-control.component';
 import { GlobalControlComponent } from './tenants/edit-tenant/security/global-control/global-control.component';
-import { TaskLogsComponent } from './tenants/edit-tenant/task/task-logs/task-logs.component';
 import { TaskEditorComponent } from './tenants/edit-tenant/task/task-editor/task-editor.component';
 import { TaskBoardComponent } from './tenants/edit-tenant/task/task-board/task-board.component';
 import { TemplateBuilderComponent } from './common/template-builder/template-builder.component';
@@ -49,6 +48,9 @@ import { ImageTbcComponent } from './common/template-builder/components/image-tb
 import { TextTbcComponent } from './common/template-builder/components/text-tbc/text-tbc.component';
 import { VideoTbcComponent } from './common/template-builder/components/video-tbc/video-tbc.component';
 import { ModalCreateComponent } from './tenants/edit-tenant/task/task-board/modal-create/modal-create.component';
+import { TaskLogsComponent } from './tenants/edit-tenant/task/task-logs/task-logs.component';
+
+
 
 
 
@@ -83,6 +85,7 @@ import { ModalCreateComponent } from './tenants/edit-tenant/task/task-board/moda
         ProjectControlComponent,
         TaskControlComponent,
         GlobalControlComponent,
+
         TaskLogsComponent,
         TaskEditorComponent,
         TaskBoardComponent,
@@ -98,6 +101,7 @@ import { ModalCreateComponent } from './tenants/edit-tenant/task/task-board/moda
     imports: [
         CommonModule,
         FormsModule,
+        ReactiveFormsModule,
         HttpClientModule,
         JsonpModule,
         ModalModule.forRoot(),

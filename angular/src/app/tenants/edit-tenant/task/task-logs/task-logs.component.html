@@ -1,3 +1,60 @@
-<p>
-  task-logs works!
-</p>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(f)" #f="ngForm" class="drop-items">
+  <div class="form-group ">
+  </div>
+  <button style="margin-top:5px; margin-bottom:5px;" type="button" class="btn-intobi" (click)="addNewsprintname()">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Sprint
+  </button>
+  <div formArrayName="taskmeng">
+    <div style="margin-top:5px; margin-bottom:5px;" *ngFor="let sprintname of myForm.get('taskmeng').controls; let i=index">
+      <fieldset>
+        <legend>
+          <h4>Sprint #{{i+1}}:
+              <span (click)="deletesprintname(i)" class="fa fa-trash" aria-hidden="true" style="font-size: 30px; cursor: pointer;"></span>
+              
+          </h4>
+        </legend>
+        <div [formGroupName]="i">
+          <div class="form-inline">
+            <div class="form-group">
+              <label style="margin-right:10px;" class="col-form-label" for="sprintname">Table:</label>
+                <span class="fa fa-plus-square" aria-hidden="true" (click)="addNewtablename(sprintname.controls.tablenames)"style="font-size: 30px; color: black; cursor: pointer;" ></span> 
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="sprintname" placeholder="Sprint name"name="type"formControlName="sprintname" style="margin-right:5px;"required>
+                </div>
+              </div>
+          </div>
+          <div class="form-inline ">
+            <div class="form-group">
+              <div formArrayName="tablenames">
+                <div style="margin-top:5px; margin-bottom:5px;" *ngFor="let lines of sprintname.get('tablenames').controls; let j=index">
+                  <div  [formGroupName]="j">
+                  <div class="col-md-3">
+                      <div class="form-group">
+                          <div dndDropzone class="builder-area drop-item">
+                              <div dndPlaceholderRef class="drop-zone text-center">
+                                <p>Drop Task Here</p>
+                              </div>
+                            </div>
+                        <label style="margin-right:5px;" class="col-form-label" for="emailId">Table {{j + 1}}</label>
+                        <input class="form-control" style="margin-right:5px;" type="text"placeholder="Table name" id="tablename" name="tablename" />
+                          <span style="font-size: 30px; color: black; cursor: pointer;" class="fa fa-plus-square" class="fa fa-trash" aria-hidden="true" (click)="deletetablename(sprintname.controls.tablenames, j)"></span>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+
+
+  <button type="submit" class="btn-intobi">Submit</button>
+  <button type="button" class="btn-back">Cancel</button>
+</form>
+
+
+<br><br><br><br>
+<pre>{{myForm.value | json}}</pre>

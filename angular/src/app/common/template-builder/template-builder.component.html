@@ -1,62 +1,46 @@
- <div class="drop-item" style="height: 55px">
-    <button class="btn-back">Add Sprint</button>
+<div class="drop-item" style="height: 55px">
+  <button class="btn-back" (click)='onAddDatad()'>Add Sprint</button>
 </div>
 <br>
-<div class="row">
-  <div class="col-md-12">
-    <h4>Sprint #1</h4>
-  </div>
-  <div class="col-md-12" dndDropzone>
-      <div class="col-md-6 text-center"> <button (click)="createTenant()" class="btn-intobi">Add Task</button></div>
-      <div class="col-md-6 text-center"><button class="btn-intobi">Add Table</button></div>
-  </div>
-  <div class="col-md-12">
-    <div class="row">
-      <div class="col-md-12 mobile-note">
-        NOTE : Functionality is limited on mobile.
-      </div>
+<div class="sprint-card " *ngFor="let divDatad of dataSourcec">
+  <div class="row">
+    <div class="col-md-12">
+        <button type="button" class="close"  aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      <h4>Sprint #1</h4>
+      <button (click)="createTenant()" class="btn-intobi">+ <i class="fa fa-object-group" aria-hidden="true"></i></button>
+      <button class="btn-intobi" (click)='onAddData()'>+ <i class="fa fa-table" aria-hidden="true"></i></button>
+    </div>
+    <div class="col-md-12" dndDropzone>
+      <div class="col-md-6" style="float: right"> 
+       </div>
 
-      <div class="col-md-3">
-        <h5>TO DO</h5>
-        <div dndDropzone class="builder-area drop-item">
-          <div dndPlaceholderRef class="drop-zone text-center">
-            <p>Drop Task Here</p>
-          </div>
-          <div>
-          </div>
+    </div>
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-12 mobile-note">
+          NOTE : Functionality is limited on mobile.
         </div>
-      </div>
-      <div class="col-md-3">
-        <h5>IN PROGRESS</h5>
-        <div dndDropzone class="builder-area drop-item">
-          <div dndPlaceholderRef class="drop-zone text-center">
-            <p>Drop Task Here</p>
-          </div>
-          <div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <h5>TEST</h5>
-        <div dndDropzone class="builder-area drop-item">
-          <div dndPlaceholderRef class="drop-zone text-center">
-            <p>Drop Task Here</p>
-          </div>
-          <div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <h5>DONE</h5>
-        <div dndDropzone class="builder-area drop-item">
-          <div dndPlaceholderRef class="drop-zone text-center">
-            <p>Drop Task Here</p>
-          </div>
-          <div>
+        <div id="content">
+           
+          <div class="col-md-3" *ngFor="let divData of dataSource">
+              <button type="button" class="close"  aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+            <h5>DONE</h5>
+            <div dndDropzone class="builder-area drop-item">
+              <div dndPlaceholderRef class="drop-zone text-center">
+                <p>Drop Task Here</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
 <create-tenant-modal #createTenantModal (modalSave)="refresh()"></create-tenant-modal>
+
