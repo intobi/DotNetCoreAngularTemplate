@@ -1,0 +1,28 @@
+
+                <form  [formGroup]="form" (ngSubmit)="submit()">
+                        <mat-card>
+                          <span class="d-flex justify-content-between align-items-baseline">
+                          </span>
+                          <div class="row">
+                            <mat-form-field class="col" [ngClass]="routeAnimationsElements">
+                              <input matInput  [placeholder]="'anms.auth.email' | translate"
+                                formControlName="username">
+                            </mat-form-field>
+                          </div>
+                          <div class="row">
+                              <mat-form-field class="col" [ngClass]="routeAnimationsElements">
+                                  <input matInput type="password" [placeholder]="'anms.auth.pass' | translate"
+                                    formControlName="password">
+                                </mat-form-field>
+                          </div>
+                          <div class="row buttons d-flex justify-content-between pad">
+                            <button  routerLink="/page/home" type="button" mat-raised-button color="accent" [disabled]="form.get('autosave').value"
+                              [ngClass]="routeAnimationsElements" (click)="submit()">
+                             {{ 'anms.menu.login' | translate }}
+                            </button>
+                          </div>
+                        </mat-card>
+                    
+                  </form>
+                
+                 

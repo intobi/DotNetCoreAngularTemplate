@@ -1,0 +1,37 @@
+
+<div class="auth">
+    <div style="position: absolute;top: 30px;right: 30px;width: 50px;">
+        <span *ngIf="language$ | async as language">
+            <mat-select [ngModel]="language" (selectionChange)="onLanguageSelect($event)">
+                <mat-option *ngFor="let l of languages" [value]="l">
+                    {{ l.toUpperCase() }}
+                </mat-option>
+            </mat-select>
+        </span>
+    </div>
+<div style="width: 100%;">
+<div  class="container" rtl>
+    <div class="row">
+        <div class="col-md-12">
+                <h1></h1>
+        </div>
+        <div class="col-md-6">
+            <div class="box" style="width: 100%x; height: 400px; background: #03a9f4">
+                    <h1 class="d-flex " style="color: white;align-items: center;height: 100%;font-size: 6rem;">POINTVIEW</h1>
+            </div>
+        </div>
+     
+        <div class="col-md-6" style="margin: auto">
+           <anms-login *ngIf="loginform"></anms-login>
+            <anms-login-pin *ngIf="!loginform"></anms-login-pin>
+            <div *ngFor="let error of errors">
+                    {{error.ercode}}
+            </div>
+        </div>
+        <div class="col-md-12">
+            <h2 style="color: green"></h2>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
